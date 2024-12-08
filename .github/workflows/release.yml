@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: linux-artifact
-          path: ./ip_filter-1.0.${{ github.run_number }}-Linux.deb
+          path: ./container-1.0.${{ github.run_number }}-Linux.deb
   Windows:
     runs-on: windows-latest
     permissions: write-all
@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: windows-artifact
-          path: ./ip_filter-1.0.${{ github.run_number }}-Windows.exe
+          path: ./container-1.0.${{ github.run_number }}-Windows.exe
   Release:
     runs-on: ubuntu-latest
     permissions: write-all
@@ -78,8 +78,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./ip_filter-1.0.${{ github.run_number }}-Linux.deb
-          asset_name: ip_filter-1.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./container-1.0.${{ github.run_number }}-Linux.deb
+          asset_name: container-1.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
       - name: Upload Windows Asset
         uses: actions/upload-release-asset@v1
@@ -87,6 +87,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./ip_filter-1.0.${{ github.run_number }}-Windows.exe
-          asset_name: ip_filter-1.0.${{ github.run_number }}-Windows.exe
+          asset_path: ./container-1.0.${{ github.run_number }}-Windows.exe
+          asset_name: container-1.0.${{ github.run_number }}-Windows.exe
           asset_content_type: application/vnd.microsoft.portable-executable
