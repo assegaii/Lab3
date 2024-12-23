@@ -1,8 +1,8 @@
 [
 {
   "directory": "D:/Study/C++/Labs/Lab3/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -ID:/Study/C++/Labs/Lab3/include -static-libgcc -static-libstdc++ -std=gnu++14 -std=gnu++14 -o CMakeFiles\\container.dir\\main.cpp.obj -c D:\\Study\\C++\\Labs\\Lab3\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -std=gnu++17 -Wall -Wextra -o CMakeFiles\\Containers.dir\\main.cpp.obj -c D:\\Study\\C++\\Labs\\Lab3\\main.cpp",
   "file": "D:\\Study\\C++\\Labs\\Lab3\\main.cpp",
-  "output": "CMakeFiles\\container.dir\\main.cpp.obj"
+  "output": "CMakeFiles\\Containers.dir\\main.cpp.obj"
 }
 ]

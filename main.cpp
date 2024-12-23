@@ -14,7 +14,7 @@ int main() {
     std::cout << "Списковый контейнер" << std::endl;
     test_container(lnk);
 
-    std::cin.get();
+    // std::cin.get();
     
     return 0;
 }

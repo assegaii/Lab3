@@ -25,7 +25,7 @@ void test_container(Container& container) {
     
     // 5. Удаление третьего (по счёту), пятого и седьмого элементов
     container.erase(2);
-    container.erase(3);  // Обратите внимание, что после предыдущего удаления индексы смещаются
+    container.erase(3);  
     container.erase(4);
     
     // 6. Вывод содержимого контейнера на экран
